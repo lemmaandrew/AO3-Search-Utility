@@ -1,0 +1,12 @@
+p:after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #aaaaaa;
+        background: #050505;
+    }
+}
