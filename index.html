@@ -11,11 +11,11 @@
             <hr style="color: blue">
             <small>(checking same of include and exclude will default to exclude)</small>
         </section>
-        <div id="forms" style="display: table; border: solid #cc0000"> <!--Table div for all forms-->
-            <div style="display: table-row"> <!--First table row (categories and warnings)-->
-                <div style="display: table-cell; border-right: dotted #990000; border-bottom: solid #990000" id="include-category-form">
-                    <h3>Categories to include</h3>
-                    <form autocomplete="off">
+        <div id="forms" class="container" style="width: 50%">
+            <div id="include-category-form">
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>Categories to include</legend>
                         <input type="checkbox" autocomplete="off" id="ff" name="include-categories"></input>
                         <label for="ff">F/F</label><br>
                         <input type="checkbox" autocomplete="off" id="fm" name="include-categories"></input>
@@ -28,11 +28,13 @@
                         <label for="multi">Multi</label><br>
                         <input type="checkbox" autocomplete="off" id="other" name="include-categories"></input>
                         <label for="other">Other</label>
-                    </form>
-                </div>
-                <div style="display: table-cell; border-bottom: solid #990000" id="exclude-category-form">
-                    <h3>Categories to exclude</h3>
-                    <form autocomplete="off">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="exclude-category-form">
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>Categories to exclude</legend>
                         <input type="checkbox" autocomplete="off" id="ff" name="exclude-categories"></input>
                         <label for="ff">F/F</label><br>
                         <input type="checkbox" autocomplete="off" id="fm" name="exclude-categories"></input>
@@ -45,13 +47,13 @@
                         <label for="multi">Multi</label><br>
                         <input type="checkbox" autocomplete="off" id="other" name="exclude-categories"></input>
                         <label for="other">Other</label>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </div>
-            <div style="display: table-row">
-                <div style="display: table-cell; border-right: dotted #990000; border-bottom: solid #990000" id="include-warning-form">
-                    <h3>Warnings to include</h3>
-                    <form>
+            <div id="include-warning-form">
+                <form>
+                    <fieldset>
+                        <legend>Warnings to include</legend>
                         <input type="checkbox" autocomplete="off" id="chose-none" name="include-warnings"></input>
                         <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
                         <input type="checkbox" autocomplete="off" id="graphic-violence" name="include-warnings"></input>
@@ -64,11 +66,13 @@
                         <label for="rape">Rape/Non-Con</label><br>
                         <input type="checkbox" autocomplete="off" id="underage" name="include-warnings"></input>
                         <label for="underage">Underage Sex</label>
-                    </form>
-                </div>
-                <div style="display: table-cell; border-bottom: solid #990000" id="exclude-warning-form">
-                    <h3>Warnings to exclude</h3>
-                    <form autocomplete="off">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="exclude-warning-form">
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>Warnings to exclude</legend>
                         <input type="checkbox" autocomplete="off" id="chose-none" name="exclude-warnings"></input>
                         <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
                         <input type="checkbox" autocomplete="off" id="graphic-violence" name="exclude-warnings"></input>
@@ -81,13 +85,13 @@
                         <label for="rape">Rape/Non-Con</label><br>
                         <input type="checkbox" autocomplete="off" id="underage" name="exclude-warnings"></input>
                         <label for="underage">Underage Sex</label>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </div>
-            <div style="display: table-row">
-                <div style="display: table-cell" id="include-rating-form">
-                    <h3>Ratings</h3>
-                    <form autocomplete="off">
+            <div id="include-rating-form">
+                <form autocomplete="off">
+                    <fieldset>
+                        <legend>Ratings</legend>
                         <input type="checkbox" autocomplete="off" id="not-rated" name="include-ratings"></input>
                         <label for="not-rated">Not Rated</label><br>
                         <input type="checkbox" autocomplete="off" id="ga" name="include-ratings"></input>
@@ -98,16 +102,16 @@
                         <label for="mature">Mature</label><br>
                         <input type="checkbox" autocomplete="off" id="explicit" name="include-ratings"></input>
                         <label for="explicit">Explicit</label>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </div>
-        </div>
-        <div id="otp-form">
-            <br>
-            <form autocomplete="off">
-                <input type="checkbox" autocomplete="off" id="otp" name="otp"></input>
-                <label for="otp">OTP (only one relationship)</label>
-            </form>
+            <div id="otp-form" style="place-items: bottom">
+                <br>
+                <form autocomplete="off">
+                    <input type="checkbox" autocomplete="off" id="otp" name="otp"></input>
+                    <label for="otp">OTP (only one relationship)</label>
+                </form>
+            </div>
         </div>
         <section>
             <h2>Your "Any Field" is:</h2>

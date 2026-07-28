@@ -4,6 +4,13 @@ p:after {
     width: 0px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    border: solid #cc0000;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         color: #aaaaaa;
