@@ -5,122 +5,124 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <section style="width: 50%">
+        <header style="width: 50%">
             <h1>AO3 Search Bonus Utility</h1>
             <p>Simply fill out (or leave blank!) the below fields, then paste the resulting text into the "Any Field" section of AO3's Work Search page and bada bing bada boom</p>
             <hr style="color: blue">
             <small>(checking same of include and exclude will default to exclude)</small>
-        </section>
-        <div id="forms" class="container" style="width: 50%">
-            <!--Categories forms-->
-            <div id="include-category-form">
-                <form autocomplete="off">
-                    <fieldset>
-                        <legend>Categories to include</legend>
-                        <input type="checkbox" autocomplete="off" id="ff" name="include-categories"></input>
-                        <label for="ff">F/F</label><br>
-                        <input type="checkbox" autocomplete="off" id="fm" name="include-categories"></input>
-                        <label for="fm">F/M</label><br>
-                        <input type="checkbox" autocomplete="off" id="gen" name="include-categories"></input>
-                        <label for="gen">Gen</label><br>
-                        <input type="checkbox" autocomplete="off" id="mm" name="include-categories"></input>
-                        <label for="mm">M/M</label><br>
-                        <input type="checkbox" autocomplete="off" id="multi" name="include-categories"></input>
-                        <label for="multi">Multi</label><br>
-                        <input type="checkbox" autocomplete="off" id="other" name="include-categories"></input>
-                        <label for="other">Other</label>
-                    </fieldset>
-                </form>
+        </header>
+        <main>
+            <div id="forms" class="container" style="width: 50%">
+                <!--Categories forms-->
+                <div id="include-category-form">
+                    <form autocomplete="off">
+                        <fieldset>
+                            <legend>Categories to include</legend>
+                            <input type="checkbox" autocomplete="off" id="ff" name="include-categories"></input>
+                            <label for="ff">F/F</label><br>
+                            <input type="checkbox" autocomplete="off" id="fm" name="include-categories"></input>
+                            <label for="fm">F/M</label><br>
+                            <input type="checkbox" autocomplete="off" id="gen" name="include-categories"></input>
+                            <label for="gen">Gen</label><br>
+                            <input type="checkbox" autocomplete="off" id="mm" name="include-categories"></input>
+                            <label for="mm">M/M</label><br>
+                            <input type="checkbox" autocomplete="off" id="multi" name="include-categories"></input>
+                            <label for="multi">Multi</label><br>
+                            <input type="checkbox" autocomplete="off" id="other" name="include-categories"></input>
+                            <label for="other">Other</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="exclude-category-form">
+                    <form autocomplete="off">
+                        <fieldset>
+                            <legend>Categories to exclude</legend>
+                            <input type="checkbox" autocomplete="off" id="ff" name="exclude-categories"></input>
+                            <label for="ff">F/F</label><br>
+                            <input type="checkbox" autocomplete="off" id="fm" name="exclude-categories"></input>
+                            <label for="fm">F/M</label><br>
+                            <input type="checkbox" autocomplete="off" id="gen" name="exclude-categories"></input>
+                            <label for="gen">Gen</label><br>
+                            <input type="checkbox" autocomplete="off" id="mm" name="exclude-categories"></input>
+                            <label for="mm">M/M</label><br>
+                            <input type="checkbox" autocomplete="off" id="multi" name="exclude-categories"></input>
+                            <label for="multi">Multi</label><br>
+                            <input type="checkbox" autocomplete="off" id="other" name="exclude-categories"></input>
+                            <label for="other">Other</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="line"></div>
+                <!--Warnings forms-->
+                <div id="include-warning-form">
+                    <form>
+                        <fieldset>
+                            <legend>Warnings to include</legend>
+                            <input type="checkbox" autocomplete="off" id="chose-none" name="include-warnings"></input>
+                            <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
+                            <input type="checkbox" autocomplete="off" id="graphic-violence" name="include-warnings"></input>
+                            <label for="graphic-violence">Graphic Depictions Of Violence</label><br>
+                            <input type="checkbox" autocomplete="off" id="major-death" name="include-warnings"></input>
+                            <label for="major-death">Major Character Death</label><br>
+                            <input type="checkbox" autocomplete="off" id="none" name="include-warnings"></input>
+                            <label for="none">No Archive Warnings Apply</label><br>
+                            <input type="checkbox" autocomplete="off" id="rape" name="include-warnings"></input>
+                            <label for="rape">Rape/Non-Con</label><br>
+                            <input type="checkbox" autocomplete="off" id="underage" name="include-warnings"></input>
+                            <label for="underage">Underage Sex</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="exclude-warning-form">
+                    <form autocomplete="off">
+                        <fieldset>
+                            <legend>Warnings to exclude</legend>
+                            <input type="checkbox" autocomplete="off" id="chose-none" name="exclude-warnings"></input>
+                            <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
+                            <input type="checkbox" autocomplete="off" id="graphic-violence" name="exclude-warnings"></input>
+                            <label for="graphic-violence">Graphic Depictions Of Violence</label><br>
+                            <input type="checkbox" autocomplete="off" id="major-death" name="exclude-warnings"></input>
+                            <label for="major-death">Major Character Death</label><br>
+                            <input type="checkbox" autocomplete="off" id="none" name="exclude-warnings"></input>
+                            <label for="none">No Archive Warnings Apply</label><br>
+                            <input type="checkbox" autocomplete="off" id="rape" name="exclude-warnings"></input>
+                            <label for="rape">Rape/Non-Con</label><br>
+                            <input type="checkbox" autocomplete="off" id="underage" name="exclude-warnings"></input>
+                            <label for="underage">Underage Sex</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="line"></div>
+                <!--Ratinng form and OTP checkbox -->
+                <div id="include-rating-form">
+                    <form autocomplete="off">
+                        <fieldset>
+                            <legend>Ratings</legend>
+                            <input type="checkbox" autocomplete="off" id="not-rated" name="include-ratings"></input>
+                            <label for="not-rated">Not Rated</label><br>
+                            <input type="checkbox" autocomplete="off" id="ga" name="include-ratings"></input>
+                            <label for="ga">General Audiences</label><br>
+                            <input type="checkbox" autocomplete="off" id="teen" name="include-ratings"></input>
+                            <label for="teen">Teen and Up Audiences</label><br>
+                            <input type="checkbox" autocomplete="off" id="mature" name="include-ratings"></input>
+                            <label for="mature">Mature</label><br>
+                            <input type="checkbox" autocomplete="off" id="explicit" name="include-ratings"></input>
+                            <label for="explicit">Explicit</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="otp-form" style="justify-self: left; align-self: end">
+                    <form autocomplete="off">
+                        <input type="checkbox" autocomplete="off" id="otp" name="otp"></input>
+                        <label for="otp">OTP (only one relationship)</label>
+                    </form>
+                </div>
             </div>
-            <div id="exclude-category-form">
-                <form autocomplete="off">
-                    <fieldset>
-                        <legend>Categories to exclude</legend>
-                        <input type="checkbox" autocomplete="off" id="ff" name="exclude-categories"></input>
-                        <label for="ff">F/F</label><br>
-                        <input type="checkbox" autocomplete="off" id="fm" name="exclude-categories"></input>
-                        <label for="fm">F/M</label><br>
-                        <input type="checkbox" autocomplete="off" id="gen" name="exclude-categories"></input>
-                        <label for="gen">Gen</label><br>
-                        <input type="checkbox" autocomplete="off" id="mm" name="exclude-categories"></input>
-                        <label for="mm">M/M</label><br>
-                        <input type="checkbox" autocomplete="off" id="multi" name="exclude-categories"></input>
-                        <label for="multi">Multi</label><br>
-                        <input type="checkbox" autocomplete="off" id="other" name="exclude-categories"></input>
-                        <label for="other">Other</label>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="line"></div>
-            <!--Warnings forms-->
-            <div id="include-warning-form">
-                <form>
-                    <fieldset>
-                        <legend>Warnings to include</legend>
-                        <input type="checkbox" autocomplete="off" id="chose-none" name="include-warnings"></input>
-                        <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
-                        <input type="checkbox" autocomplete="off" id="graphic-violence" name="include-warnings"></input>
-                        <label for="graphic-violence">Graphic Depictions Of Violence</label><br>
-                        <input type="checkbox" autocomplete="off" id="major-death" name="include-warnings"></input>
-                        <label for="major-death">Major Character Death</label><br>
-                        <input type="checkbox" autocomplete="off" id="none" name="include-warnings"></input>
-                        <label for="none">No Archive Warnings Apply</label><br>
-                        <input type="checkbox" autocomplete="off" id="rape" name="include-warnings"></input>
-                        <label for="rape">Rape/Non-Con</label><br>
-                        <input type="checkbox" autocomplete="off" id="underage" name="include-warnings"></input>
-                        <label for="underage">Underage Sex</label>
-                    </fieldset>
-                </form>
-            </div>
-            <div id="exclude-warning-form">
-                <form autocomplete="off">
-                    <fieldset>
-                        <legend>Warnings to exclude</legend>
-                        <input type="checkbox" autocomplete="off" id="chose-none" name="exclude-warnings"></input>
-                        <label for="chose-none">Creator Chose Not To Use Archive Warnings</label><br>
-                        <input type="checkbox" autocomplete="off" id="graphic-violence" name="exclude-warnings"></input>
-                        <label for="graphic-violence">Graphic Depictions Of Violence</label><br>
-                        <input type="checkbox" autocomplete="off" id="major-death" name="exclude-warnings"></input>
-                        <label for="major-death">Major Character Death</label><br>
-                        <input type="checkbox" autocomplete="off" id="none" name="exclude-warnings"></input>
-                        <label for="none">No Archive Warnings Apply</label><br>
-                        <input type="checkbox" autocomplete="off" id="rape" name="exclude-warnings"></input>
-                        <label for="rape">Rape/Non-Con</label><br>
-                        <input type="checkbox" autocomplete="off" id="underage" name="exclude-warnings"></input>
-                        <label for="underage">Underage Sex</label>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="line"></div>
-            <!--Ratinng form and OTP checkbox -->
-            <div id="include-rating-form">
-                <form autocomplete="off">
-                    <fieldset>
-                        <legend>Ratings</legend>
-                        <input type="checkbox" autocomplete="off" id="not-rated" name="include-ratings"></input>
-                        <label for="not-rated">Not Rated</label><br>
-                        <input type="checkbox" autocomplete="off" id="ga" name="include-ratings"></input>
-                        <label for="ga">General Audiences</label><br>
-                        <input type="checkbox" autocomplete="off" id="teen" name="include-ratings"></input>
-                        <label for="teen">Teen and Up Audiences</label><br>
-                        <input type="checkbox" autocomplete="off" id="mature" name="include-ratings"></input>
-                        <label for="mature">Mature</label><br>
-                        <input type="checkbox" autocomplete="off" id="explicit" name="include-ratings"></input>
-                        <label for="explicit">Explicit</label>
-                    </fieldset>
-                </form>
-            </div>
-            <div id="otp-form" style="justify-self: left; align-self: end">
-                <form autocomplete="off">
-                    <input type="checkbox" autocomplete="off" id="otp" name="otp"></input>
-                    <label for="otp">OTP (only one relationship)</label>
-                </form>
-            </div>
-        </div>
-        <section>
-            <h2>Your "Any Field" is:</h2>
-            <p id="output" style="border: solid green; word-break: break-word; width: 50%"></p>
-        </section>
+            <section>
+                <h2>Your "Any Field" is:</h2>
+                <p id="output" style="border: solid green; word-break: break-word; width: 50%"></p>
+            </section>
+        </main>
     <script src="js/main.js"></script>
     </body>
 </html>
