@@ -7,8 +7,18 @@ p:after {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5px;
     border: solid #cc0000;
+}
+
+.container div > form {
+    padding-bottom: 10px; /* Padding to space out forms */
+}
+
+/* Dummy line for the grid to separate the form lines */
+.line {
+    grid-column: 1 / -1;
+    height: 1px;
+    background: #990000;
 }
 
 @media (prefers-color-scheme: dark) {
